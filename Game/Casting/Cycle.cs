@@ -8,14 +8,14 @@ namespace Unit05.Game.Casting
     /// <para>A long limbless reptile.</para>
     /// <para>The responsibility of Snake is to move itself.</para>
     /// </summary>
-    public class Snake : Actor
+    public class Cycle : Actor
     {
         private List<Actor> segments = new List<Actor>();
 
         /// <summary>
         /// Constructs a new instance of a Snake.
         /// </summary>
-        public Snake()
+        public Cycle()
         {
             PrepareBody();
         }
@@ -90,7 +90,7 @@ namespace Unit05.Game.Casting
         /// Turns the head of the snake in the given direction.
         /// </summary>
         /// <param name="velocity">The given direction.</param>
-        public void TurnHead(Point direction)
+        public void TurnCycle(Point direction)
         {
             segments[0].SetVelocity(direction);
         }

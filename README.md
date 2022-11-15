@@ -1,6 +1,7 @@
-# Snake
+## Cycle
 
-Eat as much fruit as you can before you eat yourself!
+Cycle is a game where the players try to cut each other off using 
+cycles that leave a trail behind them.
 
 ---
 
@@ -20,6 +21,20 @@ Start your IDE and open the project folder. Select "Run and Debug" on
 the Activity Bar. Next, select the project you'd like to run from the
 drop down list at the top of the Side Bar. Lastly, click the green
 arrow or "start debugging" button.
+
+## Playing The Game
+
+Cycle is played according to the following rules.
+
+Players can move up, down, left and right.
+Player one moves using the W, A, S and D keys.
+Player two moves using the arrow keys.
+Each player's trail grows as they move.
+Players try to maneuver so the opponent collides with their trail.
+If a player collides with their opponent's trail...
+A "game over" message is displayed in the middle of the screen.
+The cycles turn white.
+Players keep moving and turning but don't run into each other.
 
 ## Project Structure
 
