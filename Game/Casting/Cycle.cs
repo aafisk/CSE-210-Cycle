@@ -15,9 +15,10 @@ namespace Unit05.Game.Casting
         /// <summary>
         /// Constructs a new instance of a Snake.
         /// </summary>
-        public Cycle()
+        public Cycle(int XStart, int YStart, Color color)
         {
-            PrepareBody();
+            SetColor(color);
+            PrepareBody(XStart, YStart);
         }
 
         /// <summary>
@@ -51,7 +52,7 @@ namespace Unit05.Game.Casting
         /// Grows the snake's tail by the given number of segments.
         /// </summary>
         /// <param name="numberOfSegments">The number of segments to grow.</param>
-        public void GrowTail(int numberOfSegments)
+        public void GrowTail(int numberOfSegments, Color color)
         {
             for (int i = 0; i < numberOfSegments; i++)
             {
@@ -64,7 +65,7 @@ namespace Unit05.Game.Casting
                 segment.SetPosition(position);
                 segment.SetVelocity(velocity);
                 segment.SetText("#");
-                segment.SetColor(Constants.GREEN);
+                segment.SetColor(color);
                 segments.Add(segment);
             }
         }
@@ -98,23 +99,23 @@ namespace Unit05.Game.Casting
         /// <summary>
         /// Prepares the snake body for moving.
         /// </summary>
-        private void PrepareBody()
+        private void PrepareBody(int XStart, int YStart)
         {
-            int x = Constants.MAX_X / 2;
-            int y = Constants.MAX_Y / 2;
+            int x = XStart;
+            int y = YStart;
 
             for (int i = 0; i < Constants.SNAKE_LENGTH; i++)
             {
                 Point position = new Point(x - i * Constants.CELL_SIZE, y);
                 Point velocity = new Point(1 * Constants.CELL_SIZE, 0);
                 string text = i == 0 ? "8" : "#";
-                Color color = i == 0 ? Constants.YELLOW : Constants.GREEN;
+                Color color = i == 0 ? GetColor() : GetColor();
 
                 Actor segment = new Actor();
                 segment.SetPosition(position);
                 segment.SetVelocity(velocity);
                 segment.SetText(text);
-                segment.SetColor(color);
+                segment.SetColor(GetColor());
                 segments.Add(segment);
             }
         }
