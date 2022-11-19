@@ -67,7 +67,7 @@ namespace Unit05.Game.Scripting
             {
                 int points = food.GetPoints();
                 cycle1.GrowTail(points, Constants.GREEN);
-                score.AddPoints(points);
+                // score.AddPoints(points);
                 food.Reset();
             }
 
@@ -75,7 +75,7 @@ namespace Unit05.Game.Scripting
             {
                 int points = food.GetPoints();
                 cycle2.GrowTail(points, Constants.BLUE);
-                score.AddPoints(points);
+                // score.AddPoints(points);
                 food.Reset();
             }
         }

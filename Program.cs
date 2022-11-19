@@ -23,11 +23,11 @@ namespace Unit05
             cast.AddActor("food", new Food());
             cast.AddActor("cycle1", new Cycle(Constants.CELL_SIZE * 10, Constants.CELL_SIZE * 10, Constants.GREEN));
             cast.AddActor("cycle2", new Cycle(Constants.CELL_SIZE * 10, Constants.CELL_SIZE * 30, Constants.BLUE));
-            cast.AddActor("score", new Score());
+            // cast.AddActor("score", new Score());
 
             // create the services
             KeyboardService keyboardService = new KeyboardService();
-            VideoService videoService = new VideoService(true);
+            VideoService videoService = new VideoService(false);
            
             // create the script
             Script script = new Script();
