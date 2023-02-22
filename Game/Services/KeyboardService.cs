@@ -23,14 +23,14 @@ namespace Unit05.Game.Services
         {
             keys["w"] = KeyboardKey.KEY_W;
             keys["a"] = KeyboardKey.KEY_A;
-            keys["s"] = KeyboardKey.KEY_S;
+            // keys["s"] = KeyboardKey.KEY_S;
             keys["d"] = KeyboardKey.KEY_D;
             // keys["i"] = KeyboardKey.KEY_I;
             // keys["j"] = KeyboardKey.KEY_J;
             // keys["k"] = KeyboardKey.KEY_K;
             // keys["l"] = KeyboardKey.KEY_L;
             keys["up"] = KeyboardKey.KEY_UP;
-            keys["down"] = KeyboardKey.KEY_DOWN;
+            // keys["down"] = KeyboardKey.KEY_DOWN;
             keys["left"] = KeyboardKey.KEY_LEFT;
             keys["right"] = KeyboardKey.KEY_RIGHT;
         }
